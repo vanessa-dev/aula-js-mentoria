@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="941" viewBox="0 0 860 941">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="260" height="100" x="300" fill="#CE9FFF" fill-rule="nonzero" rx="4"/>
+    <rect width="260" height="100" x="300" y="141" fill="#A9C8FF" fill-rule="nonzero" rx="4"/>
+    <rect width="260" height="100" x="300" y="281" fill="#A7EBFF" fill-rule="nonzero" rx="4"/>
+    <rect width="260" height="100" x="600" y="701" fill="#A7EBFF" fill-rule="nonzero" rx="4"/>
+    <rect width="260" height="100" x="600" y="841" fill="#A7EBFF" fill-rule="nonzero" rx="4"/>
+    <rect width="260" height="100" y="141" fill="#A9C8FF" fill-rule="nonzero" rx="4"/>
+    <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+      <tspan x="380.1" y="61">Window</tspan>
+    </text>
+    <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+      <tspan x="363.3" y="201">Document</tspan>
+    </text>
+    <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+      <tspan x="380.1" y="342">&lt;html&gt;</tspan>
+    </text>
+    <g transform="translate(150 421)">
+      <rect width="260" height="100" fill="#A7EBFF" fill-rule="nonzero" rx="4"/>
+      <rect width="260" height="100" x="300" fill="#A7EBFF" fill-rule="nonzero" rx="4"/>
+      <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+        <tspan x="80.1" y="61">&lt;head&gt;</tspan>
+      </text>
+      <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+        <tspan x="380.1" y="61">&lt;body&gt;</tspan>
+      </text>
+    </g>
+    <g transform="translate(300 561)">
+      <rect width="260" height="100" fill="#A7EBFF" fill-rule="nonzero" rx="4"/>
+      <rect width="260" height="100" x="300" fill="#A7EBFF" fill-rule="nonzero" rx="4"/>
+      <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+        <tspan x="91.4" y="61">&lt;h1&gt;</tspan>
+      </text>
+      <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+        <tspan x="354.4" y="61">&lt;section&gt;</tspan>
+      </text>
+    </g>
+    <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+      <tspan x="696.4" y="762">&lt;h2&gt;</tspan>
+    </text>
+    <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+      <tspan x="705.3" y="902">&lt;p&gt;</tspan>
+    </text>
+    <text fill="#404757" font-family="IBMPlexMono-MediumItalic, IBM Plex Mono" font-size="28" font-style="italic" font-weight="500">
+      <tspan x="63.3" y="201">Location</tspan>
+    </text>
+    <g fill-rule="nonzero" transform="translate(600 140)">
+      <rect width="260" height="100" fill="#A9C8FF" rx="4"/>
+      <g fill="#404757" transform="translate(102 46)">
+        <circle cx="4" cy="4" r="4"/>
+        <circle cx="28" cy="4" r="4"/>
+        <circle cx="52" cy="4" r="4"/>
+      </g>
+    </g>
+    <g fill="#F1F1F1" fill-rule="nonzero">
+      <path d="M426 105h6v30h-6zM426 246h6v30h-6zM426 533h6v23h-6zM272 393h6v23h-6zM728 112h6v23h-6zM728 533h6v23h-6zM574 393h6v23h-6zM728 666h6v30h-6zM728 806h6v30h-6zM124 112h6v23h-6z"/>
+      <path d="M124 111h610v6H124zM272 392h308v6H272zM426 532h308v6H426zM426 386h6v6h-6zM574 526h6v6h-6z"/>
+    </g>
+  </g>
+</svg>

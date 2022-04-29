@@ -1,0 +1,15 @@
+p span:last-child {
+  box-sizing: border-box ;
+  display: inline-block;
+  background:#ccc;
+  border-radius: 4px;
+  width: 120px;
+  height: 25px;
+  margin-left: 10px;
+  padding: 4px 8px;
+}
+
+div p {
+  display: flex;
+  align-items: center;
+}
