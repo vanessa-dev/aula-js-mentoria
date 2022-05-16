@@ -28,3 +28,19 @@ button.addEventListener("click", async function (event) {
   estado.textContent = dados.uf;
   bairro.textContent = dados.bairro;  
 });
+
+// Utilizando a API https://blockchain.info/ticker
+// retorne no DOM o valor de compra da bitcoin em reais.
+// atualize este valor a cada 30s
+const bitcoin = document.querySelector(".bitcoin");
+async function valorBitcoin() {
+  const valorBitcoin = await fetch("https://blockchain.info/ticker");
+  const dados = await valorBitcoin.json();
+  bitcoin.innerText = dados.BRL.buy.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+}
+valorBitcoin();
+setInterval( async function () {
+  valorBitcoin();
+}, 30000);
+ 
+  
