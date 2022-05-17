@@ -42,5 +42,18 @@ valorBitcoin();
 setInterval( async function () {
   valorBitcoin();
 }, 30000);
- 
+
+// Utilizando a API https://api.chucknorris.io/jokes/random
+// retorne uma piada randomica do chucknorris, toda vez que
+// clicar em próxima
+const jokes = document.querySelector(".piada");
+const next = document.querySelector(".next");
+
+async function piadas () {
+  const piada = await fetch("https://api.chucknorris.io/jokes/random");
+  const json = await piada.json();
+  console.log(json.value);
+  jokes.innerText = json.value;
+}
+piadas();
   
