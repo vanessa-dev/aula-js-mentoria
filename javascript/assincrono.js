@@ -52,8 +52,12 @@ const next = document.querySelector(".next");
 async function piadas () {
   const piada = await fetch("https://api.chucknorris.io/jokes/random");
   const json = await piada.json();
-  console.log(json.value);
   jokes.innerText = json.value;
 }
+
 piadas();
+
+next.addEventListener("click", function () {
+ piadas();
+});
   
