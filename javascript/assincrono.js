@@ -61,26 +61,25 @@
 //  piadas();
 // });
 
-const btn = document.querySelectorAll("button");
-const produtosExistenteSacola = JSON.parse(localStorage.getItem("Sacola"));
-const sacola = document.querySelector(".sacola");
-let produtos = [];    
-btn.forEach(element => {
-  element.addEventListener("click", function() {
-    let produto = this.getAttribute("data-id");
-    console.log(produtosExistenteSacola);
-    if (produtosExistenteSacola.lenght) {
-      produtosExistenteSacola.forEach(function(item) {
+// Ao clicar no produto adicionar esse produto na sacola.
+// Não permitir que um produto seja adicionado mais de uma vez na sacola.
+let sacola = document.querySelector(".sacola");
+let arrayProdutos = document.querySelectorAll("button");
+let produtosSacola  = localStorage.getItem("Sacola") ? JSON.parse(localStorage.getItem("Sacola")) : [] ;
+sacola.innerHTML = produtosSacola.length;
+arrayProdutos.forEach(function(produto) {
+  produto.addEventListener("click", function() {
+   let produtoSerAdicionado =  this.getAttribute("data-id");
+    if (!produtosSacola.length) {
+      produtosSacola.push({"idProduto": produtoSerAdicionado});
+    } 
 
-        console.log(item);
-        if(item.id != produto) {
-          produtos.push({"id": produto});
-        }
-      });
-    } else {
-      produtos.push({"id": produto});
+    let existeProduto = produtosSacola.find(element => element.idProduto == produtoSerAdicionado);
+    if (!existeProduto) {
+      produtosSacola.push({"idProduto": produtoSerAdicionado});
     }
-    localStorage.setItem("Sacola", JSON.stringify(produtos));
-    // sacola.innerText = qtdSacola;
-  })
+    localStorage.setItem("Sacola", JSON.stringify(produtosSacola));
+    sacola.innerHTML = produtosSacola.length;
+    
+  });
 });
