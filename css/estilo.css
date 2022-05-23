@@ -24,3 +24,28 @@ div p {
   height: 35px;
   border-radius: 50%;
 }
+
+.produto {
+  margin-top: 5px;
+  border: 2px solid #4d4d4d;
+  padding: 8px 12px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+button {
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+.adicionar {
+  color: #3ab345;
+  background-color: #1d5c22;
+}
+
+.remover {
+  color: #b33a3a;
+  background-color: #5c241d;
+}
